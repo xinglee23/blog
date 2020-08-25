@@ -3,7 +3,7 @@
   "name": "emilia",
   "description": "Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.",
   "version": "0.3.0",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "author": "xinglee23 <hello@lekoarts.de>",
   "license": "MIT",
   "starter-name": "gatsby-starter-portfolio-emilia",
   "scripts": {
@@ -22,7 +22,8 @@
     "gatsby-plugin-manifest": "^2.2.13",
     "gatsby-plugin-netlify": "^2.1.11",
     "gatsby-plugin-offline": "^3.0.1",
-    "gatsby-plugin-sitemap": "^2.2.7",
+    "gatsby-plugin-robots-txt": "^1.5.1",
+    "gatsby-plugin-sitemap": "^2.4.12",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.10",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

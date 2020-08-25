@@ -5,8 +5,12 @@ require(`dotenv`).config({
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
+  // siteMetadata: {
+  //   siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
+  // },
   siteMetadata: {
-    siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
+    title: 'xinglee23',
+    siteUrl: 'https://emilia.lekoarts.de'
   },
   plugins: [
     {
@@ -44,6 +48,14 @@ module.exports = {
           },
         ],
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://emilia.lekoarts.de',
+        sitemap: 'https://emilia.lekoarts.de/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
