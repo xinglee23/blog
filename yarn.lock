@@ -998,6 +998,36 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@code-surfer/standalone@3.1.1":
+  version "3.1.1"
+  resolved "https://npm.pri.ibanyu.com/@code-surfer%2fstandalone/-/standalone-3.1.1.tgz#e51de911991667c84abd247ea64aa620c12b1aca"
+  integrity sha1-5R3pEZkWZ8hKvSR+pkqmIMErGso=
+  dependencies:
+    "@code-surfer/step-parser" "3.1.1"
+    "@code-surfer/themes" "3.1.1"
+    "@types/table" "^4.0.7"
+    "@types/theme-ui" "^0.2.2"
+    array.prototype.flat "^1.2.1"
+    diff "^4.0.1"
+    prismjs "^1.16.0"
+    rebound "^0.1.0"
+    shell-quote "^1.6.1"
+
+"@code-surfer/step-parser@3.1.1":
+  version "3.1.1"
+  resolved "https://npm.pri.ibanyu.com/@code-surfer%2fstep-parser/-/step-parser-3.1.1.tgz#89943a6df6799a46cb3368f683041d974fe96bd2"
+  integrity sha1-iZQ6bfZ5mkbLM2j2gwQdl0/pa9I=
+  dependencies:
+    array.prototype.flat "^1.2.1"
+    diff "^4.0.1"
+    prismjs "^1.16.0"
+    shell-quote "^1.6.1"
+
+"@code-surfer/themes@3.1.1":
+  version "3.1.1"
+  resolved "https://npm.pri.ibanyu.com/@code-surfer%2fthemes/-/themes-3.1.1.tgz#b7ec59e3bdf552bd41a1240fe1d999595f4aeb61"
+  integrity sha1-t+xZ4731Ur1BoSQP4dmZWV9K62E=
+
 "@emotion/babel-plugin-jsx-pragmatic@^0.1.5":
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin-jsx-pragmatic/-/babel-plugin-jsx-pragmatic-0.1.5.tgz#27debfe9c27c4d83574d509787ae553bf8a34d7e"
@@ -1549,7 +1579,7 @@
     unist-builder "2.0.3"
     unist-util-visit "2.0.3"
 
-"@mdx-js/react@^1.0.0", "@mdx-js/react@^1.5.2", "@mdx-js/react@^1.6.6":
+"@mdx-js/react@^1.0.0", "@mdx-js/react@^1.0.21", "@mdx-js/react@^1.5.2", "@mdx-js/react@^1.6.6":
   version "1.6.16"
   resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-1.6.16.tgz#538eb14473194d0b3c54020cb230e426174315cd"
   integrity sha512-+FhuSVOPo7+4fZaRwWuCSRUcZkJOkZu0rfAbBKvoCg1LWb1Td8Vzi0DTLORdSvgWNbU6+EL40HIgwTOs00x2Jw==
@@ -2274,6 +2304,36 @@
     "@types/glob" "*"
     "@types/node" "*"
 
+"@types/styled-system@*":
+  version "5.1.10"
+  resolved "https://npm.pri.ibanyu.com/@types%2fstyled-system/-/styled-system-5.1.10.tgz#dcf5690dd837ca49b8de1f23cb99d510c7f4ecb3"
+  integrity sha1-3PVpDdg3ykm43h8jy5nVEMf07LM=
+  dependencies:
+    csstype "^3.0.2"
+
+"@types/styled-system__css@*":
+  version "5.0.13"
+  resolved "https://npm.pri.ibanyu.com/@types%2fstyled-system__css/-/styled-system__css-5.0.13.tgz#37ccff101739ed4c67b2f13142f67fb656f5dd0f"
+  integrity sha1-N8z/EBc57UxnsvExQvZ/tlb13Q8=
+  dependencies:
+    csstype "^3.0.2"
+
+"@types/table@^4.0.7":
+  version "4.0.7"
+  resolved "https://npm.pri.ibanyu.com/@types%2ftable/-/table-4.0.7.tgz#c21100d37d4924abbbde85414170260d4d7b0316"
+  integrity sha1-whEA031JJKu73oVBQXAmDU17AxY=
+
+"@types/theme-ui@^0.2.2":
+  version "0.2.8"
+  resolved "https://npm.pri.ibanyu.com/@types%2ftheme-ui/-/theme-ui-0.2.8.tgz#ccfa1a2ee3ec666e5b54756a5a798dee234ba746"
+  integrity sha1-zPoaLuPsZm5bVHVqWnmN7iNLp0Y=
+  dependencies:
+    "@emotion/serialize" "^0.11.15"
+    "@types/react" "*"
+    "@types/styled-system" "*"
+    "@types/styled-system__css" "*"
+    csstype "^2.6.6"
+
 "@types/tmp@^0.0.33":
   version "0.0.33"
   resolved "https://registry.yarnpkg.com/@types/tmp/-/tmp-0.0.33.tgz#1073c4bc824754ae3d10cfab88ab0237ba964e4d"
@@ -2829,7 +2889,7 @@ array-unique@^0.3.2:
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
   integrity sha1-qJS3XUvE9s1nnvMkSp/Y9Gri1Cg=
 
-array.prototype.flat@^1.2.3:
+array.prototype.flat@^1.2.1, array.prototype.flat@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/array.prototype.flat/-/array.prototype.flat-1.2.3.tgz#0de82b426b0318dbfdb940089e38b043d37f6c7b"
   integrity sha512-gBlRZV0VSmfPIeWfuuy56XZMvbVfbEUnOXUvt3F/eUUUSyzlgLxhEX4YAEpxNAogRGehPSnfXyPtYyKAhkzQhQ==
@@ -4118,6 +4178,15 @@ cli-width@^3.0.0:
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-3.0.0.tgz#a2f48437a2caa9a22436e794bf071ec9e61cedf6"
   integrity sha512-FxqpkPPwu1HjuN93Omfm4h8uIanXofW0RxVEW3k5RKx+mJJYSthzNhp32Kzxxy3YAEZ/Dc/EWN1vZRY0+kOhbw==
 
+clipboard@^2.0.0:
+  version "2.0.6"
+  resolved "https://npm.pri.ibanyu.com/clipboard/-/clipboard-2.0.6.tgz#52921296eec0fdf77ead1749421b21c968647376"
+  integrity sha1-UpISlu7A/fd+rRdJQhshyWhkc3Y=
+  dependencies:
+    good-listener "^1.2.2"
+    select "^1.1.2"
+    tiny-emitter "^2.0.0"
+
 clipboardy@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/clipboardy/-/clipboardy-2.3.0.tgz#3c2903650c68e46a91b388985bc2774287dba290"
@@ -4825,7 +4894,7 @@ csso@^4.0.2:
   dependencies:
     css-tree "1.0.0-alpha.39"
 
-csstype@^2.5.7:
+csstype@^2.5.7, csstype@^2.6.6:
   version "2.6.13"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.13.tgz#a6893015b90e84dd6e85d0e3b442a1e84f2dbe0f"
   integrity sha512-ul26pfSQTZW8dcOnD2iiJssfXw0gdNVX9IJDH/X3K5DGPfj+fUYe3kB+swUY6BF3oZDxaID3AJt+9/ojSAE05A==
@@ -5099,6 +5168,11 @@ delayed-stream@~1.0.0:
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
+delegate@^3.1.2:
+  version "3.2.0"
+  resolved "https://npm.pri.ibanyu.com/delegate/-/delegate-3.2.0.tgz#b66b71c3158522e8ab5744f720d8ca0c2af59166"
+  integrity sha1-tmtxwxWFIuirV0T3INjKDCr1kWY=
+
 delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
@@ -5205,6 +5279,11 @@ diff-sequences@^25.2.6:
   version "25.2.6"
   resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-25.2.6.tgz#5f467c00edd35352b7bca46d7927d60e687a76dd"
   integrity sha512-Hq8o7+6GaZeoFjtpgvRBUknSXNeJiCx7V9Fr94ZMljNiCr9n9L8H8aJqgWOQiDDGdyn29fRNcDdRVJ5fdyihfg==
+
+diff@^4.0.1:
+  version "4.0.2"
+  resolved "https://npm.pri.ibanyu.com/diff/-/diff-4.0.2.tgz#60f3aecb89d5fae520c11aa19efc2bb982aade7d"
+  integrity sha1-YPOuy4nV+uUgwRqhnvwruYKq3n0=
 
 diffie-hellman@^5.0.0:
   version "5.0.3"
@@ -7075,6 +7154,17 @@ gatsby-telemetry@^1.3.28:
     node-fetch "2.6.0"
     uuid "3.4.0"
 
+gatsby-theme-waves@^0.1.6:
+  version "0.1.6"
+  resolved "https://npm.pri.ibanyu.com/gatsby-theme-waves/-/gatsby-theme-waves-0.1.6.tgz#8d695bb2d2d334b0eee45b25f84e9253f075443b"
+  integrity sha1-jWlbstLTNLDu5Fsl+E6SU/B1RDs=
+  dependencies:
+    "@code-surfer/standalone" "3.1.1"
+    "@mdx-js/react" "^1.0.21"
+    rebound "^0.1.0"
+    shell-quote "^1.6.1"
+    use-spring "^0.2.2"
+
 gatsby-transformer-sharp@^2.5.11:
   version "2.5.13"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.5.13.tgz#f323072d885c0fae54a55cb105f543d7c08d3a14"
@@ -7508,6 +7598,13 @@ globby@^8.0.1:
     ignore "^3.3.5"
     pify "^3.0.0"
     slash "^1.0.0"
+
+good-listener@^1.2.2:
+  version "1.2.2"
+  resolved "https://npm.pri.ibanyu.com/good-listener/-/good-listener-1.2.2.tgz#d53b30cdf9313dffb7dc9a0d477096aa6d145c50"
+  integrity sha1-1TswzfkxPf+33JoNR3CWqm0UXFA=
+  dependencies:
+    delegate "^3.1.2"
 
 got@8.3.2, got@^8.3.1, got@^8.3.2:
   version "8.3.2"
@@ -11735,6 +11832,13 @@ pretty-format@^25.5.0:
     ansi-styles "^4.0.0"
     react-is "^16.12.0"
 
+prismjs@^1.16.0:
+  version "1.21.0"
+  resolved "https://npm.pri.ibanyu.com/prismjs/-/prismjs-1.21.0.tgz#36c086ec36b45319ec4218ee164c110f9fc015a3"
+  integrity sha1-NsCG7Da0UxnsQhjuFkwRD5/AFaM=
+  optionalDependencies:
+    clipboard "^2.0.0"
+
 probe-image-size@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/probe-image-size/-/probe-image-size-4.1.1.tgz#c836c53154b6dd04dbcf66af2bbd50087b15e1dc"
@@ -12316,6 +12420,11 @@ readdirp@~3.4.0:
   integrity sha512-0xe001vZBnJEK+uKcj8qOhyAKPzIT+gStxWr3LCB0DwcXR5NZJ3IaC+yGnHCYzB/S7ov3m3EEbZI2zeNvX+hGQ==
   dependencies:
     picomatch "^2.2.1"
+
+rebound@^0.1.0:
+  version "0.1.0"
+  resolved "https://npm.pri.ibanyu.com/rebound/-/rebound-0.1.0.tgz#0638c61a93666bb515a58a03e1cfb34021e88b72"
+  integrity sha1-BjjGGpNma7UVpYoD4c+zQCHoi3I=
 
 recursive-readdir@2.2.1:
   version "2.2.1"
@@ -12955,6 +13064,11 @@ select-hose@^2.0.0:
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
   integrity sha1-Yl2GWPhlr0Psliv8N2o3NZpJlMo=
 
+select@^1.1.2:
+  version "1.1.2"
+  resolved "https://npm.pri.ibanyu.com/select/-/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
+  integrity sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=
+
 selfsigned@^1.10.7:
   version "1.10.7"
   resolved "https://registry.yarnpkg.com/selfsigned/-/selfsigned-1.10.7.tgz#da5819fd049d5574f28e88a9bcc6dbc6e6f3906b"
@@ -13159,6 +13273,11 @@ shell-quote@1.6.1:
     array-map "~0.0.0"
     array-reduce "~0.0.0"
     jsonify "~0.0.0"
+
+shell-quote@^1.6.1:
+  version "1.7.2"
+  resolved "https://npm.pri.ibanyu.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
+  integrity sha1-Z6fQLHbJ2iT5nSCAj8re0ODgS+I=
 
 side-channel@^1.0.2:
   version "1.0.3"
@@ -14169,8 +14288,8 @@ theme-ui@^0.2.49:
 
 theme-ui@^0.3.1:
   version "0.3.1"
-  resolved "https://registry.yarnpkg.com/theme-ui/-/theme-ui-0.3.1.tgz#b00ee2c03eb3d820536af8b121c64d13b3777cf0"
-  integrity sha512-My/TSALqp7Dst5Ez7nJA+94Q8zJhc26Z0qGo8kEWyoqHHJ5TU8xdhjLPBltTdQck3T32cSq5USIeSKU3JtxYUQ==
+  resolved "https://npm.pri.ibanyu.com/theme-ui/-/theme-ui-0.3.1.tgz#b00ee2c03eb3d820536af8b121c64d13b3777cf0"
+  integrity sha1-sA7iwD6z2CBTavixIcZNE7N3fPA=
   dependencies:
     "@theme-ui/color-modes" "^0.3.1"
     "@theme-ui/components" "^0.3.1"
@@ -14218,6 +14337,11 @@ timsort@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
+
+tiny-emitter@^2.0.0:
+  version "2.1.0"
+  resolved "https://npm.pri.ibanyu.com/tiny-emitter/-/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
+  integrity sha1-HRpW7fxRxD6GPLtTgqcjMONVVCM=
 
 tiny-warning@^1.0.2:
   version "1.0.3"
@@ -14881,6 +15005,11 @@ use-sidecar@^1.0.1:
   dependencies:
     detect-node-es "^1.0.0"
     tslib "^1.9.3"
+
+use-spring@^0.2.2:
+  version "0.2.3"
+  resolved "https://npm.pri.ibanyu.com/use-spring/-/use-spring-0.2.3.tgz#d38f5d1d3782c91d5d97451b5a62b0eef64d097f"
+  integrity sha1-049dHTeCyR1dl0UbWmKw7vZNCX8=
 
 use@^3.1.0:
   version "3.1.1"
