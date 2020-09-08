@@ -1,0 +1,101 @@
+---
+cover: "./camera.jpg"
+date: "2020-09-08"
+title: "Mac OS下配置多个GitHub账号"
+areas:
+  - blog
+---
+
+公司办公用的是自己的电脑，工作使用的是gitlab，自己写私人项目一般是把代码托管在github上面，工作和做自己项目的不能使用一个github账号。为了工作和生活分开，这时候就需要配置两个github账号了
+
+
+原理：要在同一台电脑上配置两个 GitHub 账号，（GitLab，码云同理）,需要生成各自配套的 SSH Key。这样，在 clone 和 push 代码的时候，就能区分用的是哪个账号。
+
+step 1:
+  取消全局设定,
+  如果之前在 git config 中全局设置过用户名和邮箱，则需要先取消设置。这个用户名和邮箱是记录每一次 commit 的用户和关联的邮箱。公司和个人用的是不同的邮箱，所以应该分别设置。这里在后面再说。
+```js
+git config --global --unset user.name
+
+git config --global --unset user.email
+```
+
+step 2:
+生成 SSH Key
+```js
+$ ssh-keygen -t rsa -C "youremail@xxx.com"
+```
+按一次回车后：
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <div style={{ textAlign: 'left' }}>
+    Generating public/private rsa key pair.<br/>
+    Enter file in which to save the key (/Users/Shinancao/.ssh/id_rsa): id_rsa_company(取个名字)<br/>
+    Enter passphrase (empty for no passphrase): <br/>
+    Enter same passphrase again: <br/>
+    Your identification has been saved in <br/>
+    id_rsa_company<br/>
+    Your public key has been saved in <br/>
+    id_rsa_company.pub.<br/>
+  </div>
+</div>
+
+step 3: 修改 SSH config 文件
+
+config 文件不是默认生产的，有些人可能会没有，所以可以先创建一个。先进入到 .ssh 文件中cd ~/.ssh，然后执行 touch config进行创建。
+打开刚才创建好的 config 文件，然后在里面添加如下内容：
+```js left
+# personal
+Host personal.github.com
+HostName github.com
+User git
+IdentityFile ~/.ssh/id_rsa
+
+# company
+Host company.github.com  # 这个名字可任意设置
+HostName github.com
+User git
+IdentityFile ~/.ssh/id_rsa_work
+```
+
+OK，现在让我们测试一下配置是否成功：
+```js
+ssh -T git@personal.github.com
+
+ssh -T git@company.github.com
+```
+
+如果输出以下内容：
+
+```js
+Hi xxx! You've successfully authenticated
+```
+
+恭喜你，已经配置成功了！慢着慢着，刚才把全局设置给取消了，现在是不是要单独设置回来，没错，取消了全局设置的用户和邮箱后，我们要为每一个项目进行单独设置。我先给大家讲一下现在该如何对项目进行设置。
+
+last step:
+由于我们设置了 Host，这就相当于是 HostName 的别名。比如现在对个人 GitHub 上的 repo 进行 clone 的时候，要改成 git clone git@personal.github.com:xxx/xxx.git。如果是已经克隆到本地的项目，则可以在项目中修改：
+
+```js
+$ git remote rm origin
+
+$ git remote add origin git@personal.github.com:xxx/xxx.git
+```
+
+可以执行 git remote -v 查看是否修改成功。
+
+```js
+git config user.email "xxx@xxx.com"
+
+git config user.name "xxname"
+```
+对公司和个人项目单独设置用户名和邮箱。
+可以查看一下：
+```js
+git config user.name
+
+git config user.email
+```
+push 的话还是照常使用：git push origin master
+
+
+[参考链接](https://hzsss.github.io/Mac-OS%E4%B8%8B%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AAGitHub%E8%B4%A6%E5%8F%B7/)
